@@ -1,4 +1,4 @@
-# Kit CTEN — Mathématiques · Physique-Chimie
+# Kit CTEN - Mathématiques · Physique-Chimie
 
 **Kit de démarrage pour les enseignants contractuels de mathématiques – physique-chimie en lycée professionnel.**
 
