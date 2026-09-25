@@ -575,6 +575,19 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   line-height:1.6;
 }
 
+/* ── Pied de page : auteurs, licence libre, Forge des communs numériques ──
+   Exigence de référencement dans la Ressourcerie de la Forge (DNE). */
+.site-foot{
+  margin-top:22px;padding-top:14px;border-top:1px solid var(--line);
+  text-align:center;font-size:11.5px;line-height:1.7;color:var(--ink-soft);
+}
+.site-foot p{margin:0}
+.site-foot strong{color:var(--ink);font-weight:700}
+.site-foot a{color:var(--brand-deep);font-weight:700;text-decoration:underline;
+  text-decoration-color:color-mix(in srgb,var(--brand) 35%,transparent);text-underline-offset:2px}
+.site-foot a:hover{text-decoration-color:var(--brand)}
+.site-foot a:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:3px}
+
 /* ── Accueil : avertissement + « Infos + » (crédits & remerciements) ──────
    Même principe que le générateur de prompts : un encadré d'avertissement
    toujours visible, qui se déplie sur les crédits. Aucun script requis
@@ -1997,6 +2010,13 @@ function renderCover(){
 
       '<div class="cover-foot">'+
         'Astuce : appuyez sur <strong>«&nbsp;/&nbsp;»</strong> pour rechercher une fiche, sur les <strong>flèches</strong> pour feuilleter.</div>'+
+
+      /* ── Pied de page : auteurs · licence · Forge ── */
+      '<footer class="site-foot">'+
+        '<p>Conception &amp; rédaction : <strong>Ludovic Diana</strong> &amp; <strong>Emelyne De Jaeghere</strong></p>'+
+        '<p>Ressource sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-SA 4.0</a>'+
+        ' · publiée sur la <a href="https://forge.apps.education.fr/ldiana/kit-cten" rel="noopener" target="_blank">Forge des communs numériques éducatifs</a></p>'+
+      '</footer>'+
     '</div></div>';
 }
 
